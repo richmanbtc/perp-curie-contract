@@ -45,7 +45,7 @@ const config: HardhatUserConfig = {
         disambiguatePaths: false,
     },
     gasReporter: {
-        excludeContracts: ["test"],
+        // excludeContracts: ["test"],
     },
     mocha: {
         require: ["ts-node/register/files"],
