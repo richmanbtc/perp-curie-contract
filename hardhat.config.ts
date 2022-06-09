@@ -4,10 +4,11 @@ import "@openzeppelin/hardhat-upgrades"
 import "@typechain/hardhat"
 import "hardhat-contract-sizer"
 import "hardhat-dependency-compiler"
-import "hardhat-gas-reporter"
 import { HardhatUserConfig } from "hardhat/config"
 import "solidity-coverage"
 import "./mocha-test"
+
+import "hardhat-gas-reporter"
 
 const config: HardhatUserConfig = {
     solidity: {
@@ -44,7 +45,7 @@ const config: HardhatUserConfig = {
         disambiguatePaths: false,
     },
     gasReporter: {
-        excludeContracts: ["test"],
+        // excludeContracts: ["test"],
     },
     mocha: {
         require: ["ts-node/register/files"],
